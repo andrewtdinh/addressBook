@@ -1,4 +1,4 @@
 'use strict';
 
 angular.module('addressBook')
-.constant('firebaseUrl', 'https://photoalbums.firebaseio.com/');
+.constant('firebaseUrl', 'https://addrbook.firebaseio.com/');
