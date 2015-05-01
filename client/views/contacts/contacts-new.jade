@@ -25,13 +25,19 @@ h4 NEW CONTACT
       .form-group
         label Facebook Page
         input.form-control(type='url', ng-model='contact.facebook')
-      .form-group
-        label Profile Photo
-        input.form-control(type='file', ng-model='contact.photo')
-        button#upload.btn.btn-success(ng-click='convertPhoto(contact.photo)') Upload Photo
-  .col-xs-4
+  .col-xs-6
       .form-group
         img.previmg
+.row
+  .col-xs-3
+      .form-group
+        label Profile Photo
+        input#upInput.form-control(type='file', ng-model='contact.photo')
+  .col-xs-3
+      .form-group
+        button#upBtn.btn.btn-success(ng-click='convertPhoto(contact.photo)') Upload Photo
+.row
+  .col-xs-4
     form
       .form-group
         button.btn.btn-success(ng-click='saveAlbumInfo(album)') Update Contact Info
