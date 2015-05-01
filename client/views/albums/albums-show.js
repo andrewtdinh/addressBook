@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .controller('AlbumsShowCtrl', function($rootScope, $scope, $state, Album, $window, $firebaseArray){
   $scope.name = $state.params.album;
 

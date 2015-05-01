@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .controller('UsersCtrl', function($scope, $state, $window, User){
   $scope.name = $state.current.name;
 

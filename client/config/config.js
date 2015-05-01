@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/');
 

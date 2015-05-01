@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .controller('NavCtrl', function($rootScope, $scope, $state, User, $firebaseObject){
 
   $scope.afAuth.$onAuth(function(data){

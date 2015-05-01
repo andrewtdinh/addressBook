@@ -1,1 +1,1 @@
-angular.module('photoAlbums', ['firebase', 'ui.router']);
+angular.module('addressBook', ['firebase', 'ui.router']);

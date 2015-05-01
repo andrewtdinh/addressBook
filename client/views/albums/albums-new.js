@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .controller('AlbumsNewCtrl', function($rootScope, $scope, $state, Album){
 
   $scope.add = function(album){

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('photoAlbums')
+angular.module('addressBook')
 .controller('AlbumsListCtrl', function($rootScope, $scope, $state, User, $firebaseArray, Album){
   $scope.afUser.$loaded(function(){
     $scope.albums = $scope.afUser.names ? $scope.afUser.names.split(',') : [];
