@@ -1,10 +1,37 @@
 
+h4 NEW CONTACT 
+
 .row
-  .col-xs-4.col-xs-offset-4
-    h4 New Contact
-    form(novalidate)
+  .col-xs-4
+    form
       .form-group
-        label Name
-        input.form-control(type='text', ng-model='album.name')
+        label Full Name
+        input.form-control(type='text', ng-model='contact.name')
       .form-group
-        button.btn.btn-xs.btn-success(ng-click='add(album)') Add
+        label Birthday
+        input.form-control(type='date', ng-model='contact.bday')
+      .form-group
+        label Phone Number
+        input.form-control(type='tel', ng-model='contact.phone')
+      .form-group
+        label Email Address
+        input.form-control(type='email', ng-model='contact.email')
+      .form-group
+        label Web Page
+        input.form-control(type='url', ng-model='contact.webpage')
+      .form-group
+        label Twitter Page
+        input.form-control(type='url', ng-model='contact.twitter')
+      .form-group
+        label Facebook Page
+        input.form-control(type='url', ng-model='contact.facebook')
+      .form-group
+        label Profile Photo
+        input.form-control(type='file', ng-model='contact.photo')
+        button#upload.btn.btn-success(ng-click='convertPhoto(contact.photo)') Upload Photo
+  .col-xs-4
+      .form-group
+        img.previmg
+    form
+      .form-group
+        button.btn.btn-success(ng-click='saveAlbumInfo(album)') Update Contact Info
