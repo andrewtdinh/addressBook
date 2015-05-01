@@ -6,7 +6,7 @@ angular.module('addressBook')
 
   $scope.oauth = function(provider){
     User.oauth(provider);
-  }
+  };
 
   $scope.submit = function(user){
     if($scope.name === 'register'){

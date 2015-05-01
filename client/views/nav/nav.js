@@ -16,7 +16,7 @@ angular.module('addressBook')
       $rootScope.afUser= null;
     }
 
-    $state.go('home');
+    $state.go('contacts.list');
   });
 
   $scope.logout = function(){
