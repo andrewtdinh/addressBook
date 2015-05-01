@@ -1,13 +1,12 @@
-
+H4 LIST OF CONTACTS
 .row
-  .col-xs-4.col-xs-offset-4
-    H4 ALBUM LIST
+  .col-xs-4
     table.table.table-striped
       thead
         tr
-          th Album Name
+          th Contact Name
           th Delete
       tbody
-        tr(ng-repeat='album in albums track by $index')
+        tr(ng-repeat='contact in contacts track by $index')
           td: a(ui-sref='albums.show({album:album})') {{album}}
           td: button.btn.btn-danger.btn-xs(ng-click='removeAlbum(album, $index)') Delete

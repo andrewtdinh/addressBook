@@ -9,14 +9,15 @@ angular.module('addressBook')
       $rootScope.displayName = getDisplayName(data);
       $rootScope.fbUser = $rootScope.fbRoot.child('users/' + data.uid);
       $rootScope.afUser = $firebaseObject($rootScope.fbUser);
+      $state.go('contacts.list');
     }else{
       $rootScope.activeUser = null;
       $rootScope.displayName = null;
       $rootScope.fbUser = null;
       $rootScope.afUser= null;
+      $state.go('home');
     }
 
-    $state.go('contacts.list');
   });
 
   $scope.logout = function(){
