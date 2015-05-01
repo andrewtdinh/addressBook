@@ -1,0 +1,10 @@
+
+.row
+  .col-xs-4.col-xs-offset-4
+    h4 New Album
+    form(novalidate)
+      .form-group
+        label Name
+        input.form-control(type='text', ng-model='album.name')
+      .form-group
+        button.btn.btn-xs.btn-success(ng-click='add(album)') Add
